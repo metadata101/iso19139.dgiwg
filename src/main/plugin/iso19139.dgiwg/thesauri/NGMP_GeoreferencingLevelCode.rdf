@@ -1,0 +1,92 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/">
+
+    <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode">
+        <dc:title>NGMP Georeferencing Level Code</dc:title>
+        <dc:description>Level of georeferencing of digital geographic information</dc:description>
+
+        <dcterms:issued>2011-09-13</dcterms:issued>
+        <dcterms:modified>2018-08-09</dcterms:modified>
+        <dc:contributor>
+            <foaf:Organization>
+                <foaf:name>GeoSolutions</foaf:name>
+                <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+            </foaf:Organization>
+        </dc:contributor>
+    </skos:ConceptScheme>
+
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode_ungeoreferenced">
+        <skos:altLabel>ungeoreferenced</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Ungeoreferenced</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">No geographic location information is supplied. Examples: sketch</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode_georeferenceable">
+        <skos:altLabel>georeferenceable</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Georeferenceable</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Available with external geographic location information. Examples: raw image with auxiliary data like control points  and/or sensor parameters</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <!--
+       <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode_georeferenced">
+          <skos:altLabel>georeferenced</skos:altLabel>
+          <skos:prefLabel xml:lang="en">Georeferenced</skos:prefLabel>
+          <skos:scopeNote xml:lang="en">Processed to include geographic location information. Examples: GeoTIFF image, terrain elevation model, vector database in WGS84</skos:scopeNote>
+          <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+       </skos:Concept>
+    -->
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___l1a">
+        <skos:altLabel>l1a</skos:altLabel>
+        <skos:prefLabel xml:lang="en">GeoreferenceableL1A</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___l1b">
+        <skos:altLabel>l1b</skos:altLabel>
+        <skos:prefLabel xml:lang="en">GeoreferenceableL1B</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___georectified">
+        <skos:altLabel>georectified</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Georectified</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___georectified1C">
+        <skos:altLabel>georectified1C</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Georectified1C</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___georectified2A">
+        <skos:altLabel>georectified2A</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Georectified2A</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode___georectified2B">
+        <skos:altLabel>georectified2B</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Georectified2B</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode_orthorectified">
+        <skos:altLabel>orthorectified</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Orthorectified</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Georeferenced and corrected for positional displacement with respect to the surface of the earth. Examples: orthophoto</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="NGMP_GeoreferencingLevelCode_trueOrthorectified">
+        <skos:altLabel>trueOrthorectified</skos:altLabel>
+        <skos:prefLabel xml:lang="en">True orthorectified</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Orthorectified and corrected for positional displacement with respect to the geometric properties of the features. Examples: an ortho image where pixels corresponding to bridges or buildings have been corrected to take into account the difference of elevation with the ground</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeoreferencingLevelCode"/>
+    </skos:Concept>
+
+
+</rdf:RDF>

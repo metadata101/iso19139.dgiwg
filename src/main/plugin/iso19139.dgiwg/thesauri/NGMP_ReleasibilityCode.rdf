@@ -1,0 +1,70 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/">
+
+   <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode">
+      <dc:title>NGMP Releasibility Code</dc:title>
+      <dc:description>Releasibility codes also include Nato Body Codes and 3-character country codes specified in STANAG 1059</dc:description>
+      <dcterms:issued>2011-09-13</dcterms:issued>
+
+      <dcterms:modified>2018-08-09</dcterms:modified>
+      <dc:contributor>
+          <foaf:Organization>
+              <foaf:name>GeoSolutions</foaf:name>
+              <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+          </foaf:Organization>
+      </dc:contributor>
+   </skos:ConceptScheme>
+
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_public">
+      <skos:altLabel>public</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Public</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Releasable to the public</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_exer">
+      <skos:altLabel>exer</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Exercice</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Exercice</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_oae">
+      <skos:altLabel>oae</skos:altLabel>
+      <skos:prefLabel xml:lang="en">OAE</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Operation Active Endeavour</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_gctf">
+      <skos:altLabel>gctf</skos:altLabel>
+      <skos:prefLabel xml:lang="en">GCTF</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Global Counter Terrorism Force</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_pse">
+      <skos:altLabel>pse</skos:altLabel>
+      <skos:prefLabel xml:lang="en">PSE</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Partnership for Peace - Staff Element</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_giroa">
+      <skos:altLabel>giroa</skos:altLabel>
+      <skos:prefLabel xml:lang="en">GIROA</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Government of the Islamic Republic Of Afghanistan</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_oup">
+      <skos:altLabel>oup</skos:altLabel>
+      <skos:prefLabel xml:lang="en">OUP</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Operation Unified Protector</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ReleasibilityCode_ncc">
+      <skos:altLabel>ncc</skos:altLabel>
+      <skos:prefLabel xml:lang="en">NCC</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">NATO Contact Countries</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ReleasibilityCode"/>
+   </skos:Concept>
+
+</rdf:RDF>

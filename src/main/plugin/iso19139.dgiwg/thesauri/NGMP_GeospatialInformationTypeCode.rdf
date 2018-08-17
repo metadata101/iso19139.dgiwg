@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/">
+    
+   <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode">
+      <dc:title>NGMP Geospatial Information Type Code</dc:title>
+      <dc:description>Categorisation of geospatial information</dc:description>
+      <dcterms:issued>2011-09-13</dcterms:issued>
+
+      <dcterms:modified>2018-08-09</dcterms:modified>
+      <dc:contributor>
+          <foaf:Organization>
+              <foaf:name>GeoSolutions</foaf:name>
+              <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+          </foaf:Organization>
+      </dc:contributor>
+   </skos:ConceptScheme>
+
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_mapSheet">
+      <skos:altLabel>mapSheet</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Map Sheet</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Interpreted graphical abstraction of the geometric and semantic situation for a particular often rectangular part of the Earthâ€™s surface using a symbolic signature defined in a legend with marginalia being part of the grap. Examples: scanned topographic map, rendered feature data as a topographic or thematic map</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_mapCoverage">
+      <skos:altLabel>mapCoverage</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Map Coverage</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Interpreted graphical abstraction of the geometric and semantic situation for a particular often rectangular part of the Earthâ€™s surface using a symbolic signature defined in a legend where marginalia have been cropped from the map to build a seamless mosaic of map sheets without the marginalia. Examples: scanned and Georeferenced topographic maps building a mosaic of more than one sheet</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_elevationModel">
+      <skos:altLabel>elevationModel</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Elevation Model</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Mathematical representation of heights of the terrain above a reference surface. Examples: DTED or LIDAR measurements</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_imageMap">
+      <skos:altLabel>imageMap</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Image Map</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Overlay of annotations and rendered features in a specific transparent symbology to Orthorectified imagery</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_gazetteer">
+      <skos:altLabel>gazetteer</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Gazetteer</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">geographical directory of information about places and place names</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_rawImage">
+      <skos:altLabel>rawImage</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Raw Image</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Matrix of pixel values as they are delivered as raw data from a sensor</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_imageCoverage">
+      <skos:altLabel>imageCoverage</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Image Coverage</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Georectified image files seamlessly covering an area of interest</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_vector2D">
+      <skos:altLabel>vector2D</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Vector 2D</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Structured data representing geospatial features. The geometrical aspect of the features is represented using point, line, or area geometric primitives which donâ€™t provide a full 3D representation of the real world (e.g., buildings may be represented by an area geometric primitive, possibly with vertices having 2 or 3 spatial coordinates, corresponding to the border of their roof).</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_GeospatialInformationTypeCode_vector3D">
+      <skos:altLabel>vector3D</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Vector 3D</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Structured data representing geospatial features. The geometrical aspect of the features is represented using point, line, area and solid geometric primitives providing a 3D representation of the real world (e.g., buildings may be represented by set of primitives and typically solids, describing their shape in more or less details).</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_GeospatialInformationTypeCode"/>
+   </skos:Concept>
+
+</rdf:RDF>

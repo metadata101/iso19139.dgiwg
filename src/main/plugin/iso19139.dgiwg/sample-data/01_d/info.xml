@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info version="1.0">
+  <general>
+    <uuid>1523aca8-6413-4b2a-a2f0-ba9f7c0089d9</uuid>
+    <createDate>2018-08-07T11:50:00</createDate>
+    <changeDate>2018-08-07T12:00:00</changeDate>
+    <schema>iso19139.dgiwg</schema>
+    <isTemplate>false</isTemplate>
+    <format>full</format>
+  </general>
+  <categories>
+    <category name="datasets" />
+  </categories>
+  <privileges>
+    <group name="sample">
+      <operation name="view" />
+      <operation name="download" />
+      <operation name="editing" />
+      <operation name="notify" />
+      <operation name="dynamic" />
+      <operation name="featured" />
+    </group>
+    <group name="all">
+      <operation name="view" />
+      <operation name="download" />
+      <operation name="dynamic" />
+      <operation name="featured" />
+    </group>
+    <group name="intranet">
+      <operation name="view" />
+      <operation name="download" />
+      <operation name="dynamic" />
+      <operation name="featured" />
+    </group>
+  </privileges>
+  <public>
+  </public>
+  <private>
+  </private>
+</info>

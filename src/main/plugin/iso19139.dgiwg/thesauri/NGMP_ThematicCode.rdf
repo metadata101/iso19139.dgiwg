@@ -1,0 +1,424 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/">
+
+   <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_ThematicCode">
+      <dc:title>NGMP Thematic Code</dc:title>
+      <dc:description>Thematic codes from baseline 2010-2 of DFDD</dc:description>
+      <dcterms:issued>2011-09-13</dcterms:issued>
+
+      <dcterms:modified>2018-08-09</dcterms:modified>
+      <dc:contributor>
+          <foaf:Organization>
+              <foaf:name>GeoSolutions</foaf:name>
+              <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+          </foaf:Organization>
+      </dc:contributor>
+   </skos:ConceptScheme>
+
+   <skos:Concept rdf:about="NGMP_ThematicCode_Extraction">
+      <skos:altLabel>Extraction</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Extraction</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the extraction of raw materials and the excavation of soil.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_FabricationProcessing">
+      <skos:altLabel>FabricationProcessing</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Fabrication and/or Processing</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the production and/or processing of materials.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Agriculture">
+      <skos:altLabel>Agriculture</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are associated with agriculture.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_PowerSupplies">
+      <skos:altLabel>PowerSupplies</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Power Supplies</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the production, transportation and distribution of energy, whereas energy is mostly electricity.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Communication">
+      <skos:altLabel>Communication</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Communication</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to any kind of communication.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_AssociatedSupportStruct">
+      <skos:altLabel>AssociatedSupportStruct</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Associated Support Structures</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which support Concepts stored in the other industrial and services Group (01).</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_StorageProvision">
+      <skos:altLabel>StorageProvision</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Storage and/or Provision</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are used to store, provide and to protect any kind of goods.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_WasteManagement">
+      <skos:altLabel>WasteManagement</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Waste Management</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the collection, storage, processing or recycling of waste.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Habitats">
+      <skos:altLabel>Habitats</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Habitats</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to settlements and buildings.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_SettlementsAssociated">
+      <skos:altLabel>SettlementsAssociated</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Settlements-associated</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are associated with settlements or related to an urban area.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_EconomicCommercial">
+      <skos:altLabel>EconomicCommercial</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Economic and/or Commercial</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to trade and/or economy.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Leisure">
+      <skos:altLabel>Leisure</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Leisure</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to recreational activities of people.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_PoliticsAdministration">
+      <skos:altLabel>PoliticsAdministration</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Politics and/or Administration</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to politics and/or which describe administrative issues.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_SciencesEducation">
+      <skos:altLabel>SciencesEducation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Sciences and/or Education</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe scientific issues and/or Concepts which relate to education.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_CulturalContext">
+      <skos:altLabel>CulturalContext</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Cultural Context</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to cultures, population and its characteristics.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Railways">
+      <skos:altLabel>Railways</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to land transportation based on rails.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_RoadsTracks">
+      <skos:altLabel>RoadsTracks</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Roads and/or Tracks</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are related to road-like Concepts, mainly which can be used by wheeled vehicles.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_GuidedTransportation">
+      <skos:altLabel>GuidedTransportation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Guided Transportation</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to a guided transportation like a cableway or a teleferic.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_WaterBorneTransportation">
+      <skos:altLabel>WaterBorneTransportation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Water-borne Transportation</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to any transportation on water.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_AirTransportation">
+      <skos:altLabel>AirTransportation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Air Transportation</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to transportation in the air.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Restrictions">
+      <skos:altLabel>Restrictions</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Restrictions</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to a restriction.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_CrossingsLinks">
+      <skos:altLabel>CrossingsLinks</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Crossings and/or Links</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to any kind of land transportation route crossing.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_TransportationAssociated">
+      <skos:altLabel>TransportationAssociated</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Transportation-associated</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which support Concepts stored in the other land transportation Group (03).</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_SpaceTransportation">
+      <skos:altLabel>SpaceTransportation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Space Transportation</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to and are essential to servicing spacecraft, enabling spacecraft to launch or re-enter, or transferring passengers or space cargo to or from spacecraft, including launch control centres and rocket assembly facilities.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_DistributionNetworks">
+      <skos:altLabel>DistributionNetworks</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Distribution Networks</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the transport in networks, such as pipelines or channels, above or below surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_CoastalLittoralZones">
+      <skos:altLabel>CoastalLittoralZones</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Coastal and/or Littoral Zones</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the coast and/or the littoral zones like beaches.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_PortsHarbours">
+      <skos:altLabel>PortsHarbours</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Ports and/or Harbours</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to ports, harbours and/or places where vessels can be moored.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Depths">
+      <skos:altLabel>Depths</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Depths</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are used to describe the depths of waterbodies.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_NatureSeabed">
+      <skos:altLabel>NatureSeabed</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Nature of Seabed</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the bottom of a waterbody.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_OffshoreConstructInstall">
+      <skos:altLabel>OffshoreConstructInstall</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Offshore Constructions and/or Installations</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to constructions and production installations which are placed in the offshore area.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_TidesCurrents">
+      <skos:altLabel>TidesCurrents</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Tides and/or Currents</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to tidal issues and/or to the currents of water.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_RoutesNavigation">
+      <skos:altLabel>RoutesNavigation</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Routes and/or Navigation</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the navigation on sea.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_HazardsObstructions">
+      <skos:altLabel>HazardsObstructions</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Hazards and/or Obstructions</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to a hazard and/or an obstruction for navigation on sea.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_SeaIce">
+      <skos:altLabel>SeaIce</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Sea Ice</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to sea ice.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_RegulatedRestrictedZones">
+      <skos:altLabel>RegulatedRestrictedZones</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Regulated and/or Restricted Zones</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are used to describe water zones where special actions and/or behaviours are restricted, regulated or permitted.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_InlandWaters">
+      <skos:altLabel>InlandWaters</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Inland Waters</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to waterbodies without tides.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_PhysicsWater">
+      <skos:altLabel>PhysicsWater</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Physics of Water</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the physical conditions of water, for example temperature or density.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Hypsography">
+      <skos:altLabel>Hypsography</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Hypsography</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the form (positions and heights) of the terrain surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Geomorphology">
+      <skos:altLabel>Geomorphology</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Geomorphology</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the earthâ€™s surface and Concepts which relate to the shaping of land forms.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Rocks">
+      <skos:altLabel>Rocks</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Rocks</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to rocks and rocks on and beneath the surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Soils">
+      <skos:altLabel>Soils</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Soils</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the soil, which means to the upper layer of the surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_NaturalResources">
+      <skos:altLabel>NaturalResources</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Natural Resources</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to raw materials and their deposits.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_SeismologyVolcanology">
+      <skos:altLabel>SeismologyVolcanology</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Seismology and/or Volcanology</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to volcanoes, earthquakes and/or other seismic occurrences on and beneath the surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Glaciers">
+      <skos:altLabel>Glaciers</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Glaciers</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to glaciers and glacial phenomena.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Anomalies">
+      <skos:altLabel>Anomalies</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Anomalies</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe anomalies in the gravity or magnetic field of earth or the fields themselves.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_GlobalEarthCover">
+      <skos:altLabel>GlobalEarthCover</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Global Earth Cover</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the coverage of earthâ€™s surface in a global perspective.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_CultivatedLand">
+      <skos:altLabel>CultivatedLand</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Cultivated Land</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe the land use for agriculture.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Rangeland">
+      <skos:altLabel>Rangeland</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Rangeland</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to areas that are uncultivated and that are usually covered with low growing grass-like vegetation.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Woodland">
+      <skos:altLabel>Woodland</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Woodland</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to a tree or wood covered area.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Wetland">
+      <skos:altLabel>Wetland</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Wetland</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to areas that are permanently or temporarily moist or covered by water.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_AridAreas">
+      <skos:altLabel>AridAreas</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Arid Areas</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe very dry regions.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_RegionsRestrictedAreas">
+      <skos:altLabel>RegionsRestrictedAreas</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Regions and/or Restricted Areas</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to areas that are designated as special and/or restricted regions based on their natural characteristics.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Fauna">
+      <skos:altLabel>Fauna</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Fauna</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to animal organisms.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_Flora">
+      <skos:altLabel>Flora</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Flora</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to members of the Plant Kingdom.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_BoundariesLimits">
+      <skos:altLabel>BoundariesLimits</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Boundaries and/or Limits</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to the official, legal or recognised boundary and/or designation of parts of earthâ€™s surface.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_LandSurveyRealEstate">
+      <skos:altLabel>LandSurveyRealEstate</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Land-survey and/or Real Estate</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are used to designate official or legal properties abd/or which are used for surveying purposes.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_AerodromesMoveSurfLighting">
+      <skos:altLabel>AerodromesMoveSurfLighting</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Aerodromes, Movement Surfaces and/or Lighting</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which define areas on land or water (including buildings, installations and equipment) and which are intended to be used either wholly or in part for the arrival, departure and surface movement of aircrafts/helicopters.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_AirspaceRoutes">
+      <skos:altLabel>AirspaceRoutes</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Airspace and/or Routes</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which contain information about defined regions in the air used for navigation under a specific authority.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_NavaidsLandAidsPointsObst">
+      <skos:altLabel>NavaidsLandAidsPointsObst</skos:altLabel>
+      <skos:prefLabel xml:lang="en">NAVAIDS, Landing Aids, Points and/or Obstacles</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe a collection of technical or other types of aids for the navigation and/or landing of aircrafts and specify geographical locations, that are either used for navigation or pose a danger to it.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_ServicesOrgsTimetables">
+      <skos:altLabel>ServicesOrgsTimetables</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Services, Organisations and/or Timetables</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which are used for services furnished to personnel and/or institutions concerned with flight operations, various Organisations and Authorities.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_TerminalProcedures">
+      <skos:altLabel>TerminalProcedures</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Terminal Procedures</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which describe series of predetermined manoeuvres for an aircraft, in order to perform a save landing or take-off.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_DefensiveOperationalStruct">
+      <skos:altLabel>DefensiveOperationalStruct</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Defensive and/or Operational Structures</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to military installations and facilities and/or to operational structures.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_RestrictedAreasBoundaries">
+      <skos:altLabel>RestrictedAreasBoundaries</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Restricted Areas and/or Boundaries</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which define borders or zones of military used areas in which special restrictions are applied and/or which are of special interest for military purposes.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_OperationsEvents">
+      <skos:altLabel>OperationsEvents</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Operations and/or Events</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts which relate to certain operations or special eventsfor military or security purposes.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_WeatherPhenomena">
+      <skos:altLabel>WeatherPhenomena</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Weather Phenomena</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts describing relatively stable weather phenomenas like wind conditions.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_ClimateConditions">
+      <skos:altLabel>ClimateConditions</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Climate Conditions</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts describing climate conditions like temperature or precipitation.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_ThematicCode_ClimateZonesRegions">
+      <skos:altLabel>ClimateZonesRegions</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Climate Zones and/or Regions</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">This Subgroup consists of Concepts describing climate zones and/or regions with special climate conditions.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_ThematicCode"/>
+   </skos:Concept>
+
+</rdf:RDF>

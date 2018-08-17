@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+
+    <DMF20_SC01>SC01: Metadata language</DMF20_SC01>
+    <DMF20_SC01.alert>Metadata language is missing</DMF20_SC01.alert>
+    <DMF20_SC01.report>Metadata language found: </DMF20_SC01.report>
+
+    <DMF20_SC02>SC02: Metadata character set</DMF20_SC02>
+    <DMF20_SC02.missing>Metadata character set is missing</DMF20_SC02.missing>
+    <DMF20_SC02.alert>Metadata character set is not UTF8</DMF20_SC02.alert>
+    <DMF20_SC02.report>Metadata character set found: </DMF20_SC02.report>
+
+    <DMF20_SC03>SC03: Hierarchy level</DMF20_SC03>
+    <DMF20_SC03.missing>Hierarchy level is missing</DMF20_SC03.missing>
+    <DMF20_SC03.unknown>Hierarchy level unknown</DMF20_SC03.unknown>
+    <DMF20_SC03.report>Hierarchy level found: </DMF20_SC03.report>
+
+    <DMF20_SC04>SC04: Metadata standard name</DMF20_SC04>
+    <DMF20_SC04.missing>Metadata standard name is missing</DMF20_SC04.missing>
+    <DMF20_SC04.report>Metadata standard name found: </DMF20_SC04.report>
+
+    <DMF20_SC05>SC05: Metadata standard version</DMF20_SC05>
+    <DMF20_SC05.missing>Metadata standard version is missing</DMF20_SC05.missing>
+    <DMF20_SC05.report>Metadata standard version found: </DMF20_SC05.report>
+
+    <DMF20_SC06>SC06: Geographic extent</DMF20_SC06>
+    <DMF20_SC06.alert>Geographic extent is required but it's missing</DMF20_SC06.alert>
+    <DMF20_SC06.report.required>Geographic extent is required</DMF20_SC06.report.required>
+    <DMF20_SC06.report.notrequired>Geographic extent is not required</DMF20_SC06.report.notrequired>
+    <DMF20_SC06.report>Geographic extent constraint is satisfied</DMF20_SC06.report>
+
+    <DMF20_SC07>SC07: Data character set</DMF20_SC07>
+    <DMF20_SC08>SC08: ServiceTypeVersion</DMF20_SC08>
+    <DMF20_SC09>SC09: Lineage</DMF20_SC09>
+    <DMF20_SC10>SC10: Distribution format</DMF20_SC10>
+    <DMF20_SC11>SC11: Digital Transfer Options</DMF20_SC11>
+    <DMF20_SC12>SC12: Metadata Identifier</DMF20_SC12>
+    <DMF20_SC13>SC13: Feature Catalogue Description</DMF20_SC13>
+    <DMF20_SC14>SC14: Browse Graphic</DMF20_SC14>
+    <DMF20_SC15>SC15: Security constraints classification</DMF20_SC15>
+    <DMF20_SC16>SC16: Resource Format</DMF20_SC16>
+    <DMF20_SC17>SC17: Spatial Resolution</DMF20_SC17>
+    <DMF20_SC18>SC18: GeoReferencing Level</DMF20_SC18>
+
+</strings>

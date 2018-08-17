@@ -1,0 +1,37 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gml="http://www.opengis.net/gml#" xmlns:grg="http://www.isotc211.org/schemas/grg/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:void="http://rdfs.org/ns/void#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:xdt="http://www.w3.org/2005/02/xpath-datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_RepresentationFormCode">
+      <dc:title>NGMP Representation Form Code</dc:title>
+      <dc:description>Codes defining whether the geospatial information is analogue or digital</dc:description>
+      <dcterms:issued>2011-09-13</dcterms:issued>
+
+      <dcterms:modified>2018-08-09</dcterms:modified>
+      <dc:contributor>
+          <foaf:Organization>
+              <foaf:name>GeoSolutions</foaf:name>
+              <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+          </foaf:Organization>
+      </dc:contributor>
+   </skos:ConceptScheme>
+
+   <skos:Concept rdf:about="NGMP_RepresentationFormCode_analogue">
+      <skos:altLabel>analogue</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Analogue</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Data represented as continuous values. The focus is hardcopy, i.e., permanent reproduction, or copy, in the form of a physical object, of any media suitable for direct use by a person (in particular paper), of displayed or transmitted data. Magnetic tapes and diskettes are not hard copies and may contain either analogue or digital data. Examples: analogue photography, paper map..</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_RepresentationFormCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_RepresentationFormCode_digital">
+      <skos:altLabel>digital</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Digital</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Data represented as discrete (discontinuous) values. Examples: files in a designated geospatial format stored on a electro-magnetic or electro-optical device or transmitted through a computer network</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_RepresentationFormCode"/>
+   </skos:Concept>
+
+</rdf:RDF>

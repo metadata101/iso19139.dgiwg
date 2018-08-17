@@ -1,0 +1,58 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/">
+
+   <skos:ConceptScheme rdf:about="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode">
+      <dc:title>NGMP Data Level Code</dc:title>
+      <dc:description>Categorisation of resolution bands of digital geospatial information (including imagery) by equivalence to paper map scales.</dc:description>
+      <dcterms:issued>2011-09-13</dcterms:issued>
+      
+      <dcterms:modified>2018-08-09</dcterms:modified>
+      <dc:contributor>
+          <foaf:Organization>
+              <foaf:name>GeoSolutions</foaf:name>
+              <foaf:homepage rdf:resource="https://www.geo-solutions.it"/>
+          </foaf:Organization>
+      </dc:contributor>
+   </skos:ConceptScheme>
+
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L0">
+      <skos:altLabel>L0</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 0</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 0 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L1">
+      <skos:altLabel>L1</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 1</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 1 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L2">
+      <skos:altLabel>L2</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 2</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 2 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L3">
+      <skos:altLabel>L3</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 3</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 3 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L4">
+      <skos:altLabel>L4</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 4</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 4 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="NGMP_DataLevelCode_L5">
+      <skos:altLabel>L5</skos:altLabel>
+      <skos:prefLabel xml:lang="en">Data Level 5</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">Level 5 of Geospatial Information as defined in MC 0296/2</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://www.dgiwg.org/ngmp/NGMP_DataLevelCode"/>
+   </skos:Concept>
+
+</rdf:RDF>
