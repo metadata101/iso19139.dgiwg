@@ -1,11 +1,11 @@
-# DGIWG Metadata Foundation 2.0 - GeoNetwork schema plugin
+# DGIWG Metadata Foundation 2.0
 
-This schema plugin implements the DMF/core metadata class,
-defined in the document
-   [DGIWG 114](http://www.dgiwg.org/dgiwg/htm/documents/standards_implementation_profiles.htm)
-   DGIWG Metadata Foundation
-   Edition 2.0
-   Document date 2017 07 12
+This GeoNetwork schema plugin implements the DMF/core metadata class,
+defined in the document ([link](http://www.dgiwg.org/dgiwg/htm/documents/standards_implementation_profiles.htm))
+   - DGIWG 114  
+     DGIWG Metadata Foundation  
+     Edition 2.0  
+     Document date 2017 07 12  
 
 This schema plugin has been developed on GeoNetwork 3.2.3 and should work on 3.2.3 or greater versions.
 
@@ -13,7 +13,7 @@ This schema plugin has been developed on GeoNetwork 3.2.3 and should work on 3.2
 
 ### GeoNetwork version to use with this plugin
 
-Use GeoNetwork 3.2.3+ version.
+Use GeoNetwork 3.2.3+ version.  
 It'll not be supported in 2.10.x or 3.0.x series so don't plug it into it!
 
 ### Adding the plugin to the source code
@@ -91,7 +91,8 @@ Then in admin > Settings, add to metadata/editor/schemaConfig the editor configu
 
 ### Adding Thesauri
 
-In the plugin directory there are a set of thesauri related to NGMP codelists.
-You need to upload all of them into GeoNetwork in oredr to be able to edit e set
+In the [plugin directory](https://github.com/metadata101/iso19139.dgiwg/tree/master/src/main/plugin/iso19139.dgiwg/thesauri) there is a set of thesauri related to NGMP codelists.
+
+You need to upload all of them into GeoNetwork in order to be able to edit e set
 of fields (some of them are mandatory)
 
