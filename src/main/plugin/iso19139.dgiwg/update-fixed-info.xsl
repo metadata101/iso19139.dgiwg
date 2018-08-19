@@ -441,6 +441,9 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- Sometimes we get an empty topicCat. Let's remove it -->
+    <xsl:template match="gmd:topicCategory[not(*)]"/>
+
     <!-- ================================================================= -->
     <!-- copy everything else as is -->
 

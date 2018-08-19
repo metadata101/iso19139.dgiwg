@@ -633,6 +633,7 @@
 
                 <!-- Topic category -->
                 <field
+                    notDisplayedIfMissing="true"
                     xpath="/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory" />
                 <action type="add" btnLabel="topicCategory"
                         name="topicCategory" or="topicCategory"
