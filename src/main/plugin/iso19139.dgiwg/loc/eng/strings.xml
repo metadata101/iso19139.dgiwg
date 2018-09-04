@@ -66,6 +66,25 @@
   <format_name>Format name</format_name>
   <format_compression>Compression type</format_compression>
 
+  <serviceStandard>Service standard</serviceStandard>
+  <serviceStandardName>Standard name</serviceStandardName>
+  <addReportForServiceStandard>Add service standard</addReportForServiceStandard>
+  
+  <resourcesOperatedByService>Resources operated by service</resourcesOperatedByService>
+  <operated_dataset_id>Dataset identifier</operated_dataset_id>
+  <add_operated_dataset_id>Add dataset id</add_operated_dataset_id>
+
+  <dgiwg_service_operations>Service operations</dgiwg_service_operations>
+  <dgiwg_service_operation>Service operation</dgiwg_service_operation>
+  <dgiwg_add_service_operation>Add operation</dgiwg_add_service_operation>
+  <dgiwg_sop_name>Service name</dgiwg_sop_name>
+  <dgiwg_sop_platform>Platform</dgiwg_sop_platform>
+  <dgiwg_sop_url>URL</dgiwg_sop_url>
+  <dgiwg_sop_function>Function</dgiwg_sop_function>
+
+  <dgiwg_service_coupling>Service coupling</dgiwg_service_coupling>
+  <dgiwg_service_coupled>Coupled service</dgiwg_service_coupled>
+  <dgiwg_add_service_coupled>Add service</dgiwg_add_service_coupled>
 
   <keywordFrom>Keywords - </keywordFrom>
   <resource>Resource</resource>
@@ -191,66 +210,5 @@
   <addCrs5730>EVRS</addCrs5730>
   <addCrs7409>ETRS89-GRS80-EVRS</addCrs7409>
 
-  <!-- String for INSPIRE SDS tab -->
 
-  <inspire_sds_cc1>Conformance class 1: invocable</inspire_sds_cc1>
-  <inspire_sds_cc2>Conformance class 2: interoperable</inspire_sds_cc2>
-  <inspire_sds_cc3>Conformance class 3: harmonized</inspire_sds_cc3>
-
-  <sds-category>Category</sds-category>
-  <inspire_add_pass>Add pass element</inspire_add_pass>
-  <sds-add-dataquality>Add DataQuality element</sds-add-dataquality>
-  <sds-add-dataqualityHelp>TG4: For each spatial data service, there shall be one and only one set
-    of quality information (dataQualityInfo element) scoped to “service”.
-  </sds-add-dataqualityHelp>
-  <sds-add-tech-spec>Add a technical specification</sds-add-tech-spec>
-  <sds-add-tech-specHelp>TG8: The Specification metadata element shall at least refer to or contain
-    one technical specification to which the invocable spatial data service fully conforms,
-    providing all the necessary technical elements, to actually invoke the service and enable its
-    usage.
-  </sds-add-tech-specHelp>
-  <sds-tech-spec>Technical specification</sds-tech-spec>
-  <conformity_desc>Tech spec title</conformity_desc>
-  <conformity_linkage>Tech spec URL</conformity_linkage>
-
-
-  <sds-section-qos>Quality of Service</sds-section-qos>
-  <sds-add-qualityofservice>Add missing Quality of Service criteria</sds-add-qualityofservice>
-  <sds-add-qualityofserviceHelp>INSPIRE SDS requires three quality of service criteria to be
-    reported in the metadata: Availability, Performance and Capacity. This button will add the
-    missing criteria.
-  </sds-add-qualityofserviceHelp>
-  <qos_measure>Measure:</qos_measure>
-  <qos_uom>UOM</qos_uom>
-  <qos_description>Description</qos_description>
-  <qos_value>Value</qos_value>
-  <sds-section-crs>Coordinate reference system</sds-section-crs>
-
-  <sds-fix-category>Fix the Category element</sds-fix-category>
-  <sds-fix-categoryHelp>(Rec1) Replace gco:CharacterString with gmx:Anchor in the description
-    metadata element.
-  </sds-fix-categoryHelp>
-
-  <sds-accesspoint>Access Point URL</sds-accesspoint>
-  <sds-add-accesspoint>Add Access Point</sds-add-accesspoint>
-
-  <sds-endpoint>Endpoint URL</sds-endpoint>
-  <sds-add-endpoint>Add Endpoint</sds-add-endpoint>
-
-  <sds-addNoConstraints>No Limitation</sds-addNoConstraints>
-  <sds-addNoConstraintsHelp>Add an element that documents that there are no limitation for this
-    service.
-  </sds-addNoConstraintsHelp>
-  <sds-addUnknownConstraints>Unknown Limitation</sds-addUnknownConstraints>
-  <sds-addConstraints>Customizable constraints</sds-addConstraints>
-
-  <sds>
-    <noConditionsApply>No conditions apply</noConditionsApply>
-    <conditionsUnknown>Conditions unknown</conditionsUnknown>
-  </sds>
-
-  <sds-limitation>Limitation</sds-limitation>
-
-  <sds-section-custodian>Responsible custodian</sds-section-custodian>
-  <sds-addOperation>Add Operation</sds-addOperation>
 </strings>

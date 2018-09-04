@@ -355,14 +355,14 @@
     <table for="srv:SV_CoupledResource">
       <header>
         <col label="srv:operationName"/>
-        <col label="gco:ScopedName"/>
         <col label="srv:identifier"/>
+        <col label="gco:ScopedName"/>
         <col/>
       </header>
       <row>
         <col xpath="srv:operationName"/>
-        <col xpath="gco:ScopedName"/>
         <col xpath="srv:identifier"/>
+        <col xpath="gco:ScopedName"/>
         <col del=".."/>
       </row>
     </table>
@@ -635,6 +635,7 @@
                 <field
                     notDisplayedIfMissing="true"
                     xpath="/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory" />
+
                 <action type="add" btnLabel="topicCategory"
                         name="topicCategory" or="topicCategory"
                         in="/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification"
@@ -1725,9 +1726,301 @@
             </section>
         </tab>
 
+        <!-- ======================================================================================================= -->
+        <!-- TAB SERVICES ========================================================================================== -->
+        <!-- ======================================================================================================= -->
+
         <tab id="DMFservices" mode="flat"
             displayIfRecord="count(gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification) > 0">
-          <section name="sec_srv_identification"></section>
+            <section name="sec_srv_identification">
+
+
+                <field xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:serviceType"/>
+
+                <field xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:serviceTypeVersion"/>
+
+                <!-- service standard -->
+
+                <section name="serviceStandard">
+                    <field
+                        name = "serviceStandardName"
+                        xpath="/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result[gmd:DQ_ConformanceResult/gmd:explanation/gco:CharacterString/text()='Service standard']/gmd:DQ_ConformanceResult/gmd:specification"
+                        del="../../../..">
+                    </field>
+
+                    <action type="add"
+                            name="serviceStandard"
+                            btnLabel="addReportForServiceStandard"
+                            if="count(gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result[gmd:DQ_ConformanceResult/gmd:explanation/gco:CharacterString/text()='Service standard']) = 0"
+                            or="report"
+                            in="/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality">
+                        <template>
+                            <snippet>
+                                <gmd:report>
+                                    <gmd:DQ_DomainConsistency>
+                                        <gmd:nameOfMeasure>
+                                            <gco:CharacterString>Service standard compliancy</gco:CharacterString>
+                                        </gmd:nameOfMeasure>
+                                        <gmd:measureDescription>
+                                            <gco:CharacterString>This describes the standard or profile the service is conformant to.</gco:CharacterString>
+                                        </gmd:measureDescription>
+                                        <gmd:result>
+                                            <gmd:DQ_ConformanceResult>
+                                                <gmd:specification>
+                                                    <gmd:CI_Citation>
+                                                        <gmd:title>
+                                                            <gco:CharacterString>service standard name (e.g. DGIWG sub-profile)</gco:CharacterString>
+                                                        </gmd:title>
+                                                        <gmd:date>
+                                                            <gmd:CI_Date>
+                                                                <gmd:date/>
+                                                                <gmd:dateType>
+                                                                    <gmd:CI_DateTypeCode
+                                                                        codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                                                                        codeListValue=""/>
+                                                                </gmd:dateType>
+                                                            </gmd:CI_Date>
+                                                        </gmd:date>
+                                                    </gmd:CI_Citation>
+                                                </gmd:specification>
+                                                <gmd:explanation>
+                                                    <gco:CharacterString>Service standard</gco:CharacterString>
+                                                </gmd:explanation>
+                                                <gmd:pass>
+                                                    <gco:Boolean>true</gco:Boolean>
+                                                </gmd:pass>
+                                            </gmd:DQ_ConformanceResult>
+                                        </gmd:result>
+                                    </gmd:DQ_DomainConsistency>
+                                </gmd:report>
+                            </snippet>
+                        </template>
+                    </action>
+                </section>
+
+                <!-- service coupling type -->
+
+                <field xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:couplingType"/>
+
+                <!-- resource operated by service (operatedDataset) -->
+
+                <section name="resourcesOperatedByService">
+
+                    <field name="operated_dataset_id"
+                           templateModeOnly="true"
+                           notDisplayedIfMissing="true"
+
+                           xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:operatesOn"
+                           del=".">
+                        <template>
+                            <values>
+                                <key label="uuid"
+                                     required="true"
+                                     xpath="@uuidref"
+                                     tooltip="srv:operatesOn">
+                                </key>
+                            </values>
+                            <snippet>
+                                <srv:operatesOn uuidref="{{uuid}}" />
+                            </snippet>
+                        </template>
+                    </field>
+
+                    <action type="add"
+                            name="operated_dataset_id"
+                            btnLabel="add_operated_dataset_id"
+                            forceLabel="true"
+                            or="operatesOn"
+                            in="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification">
+                        <template>
+                            <snippet>
+                                <srv:operatesOn uuid="0000"/>
+                            </snippet>
+                        </template>
+                    </action>
+
+                </section>
+
+                <!-- service operation (containsOperation) -->
+
+                <section name="dgiwg_service_operations">
+
+                    <field
+                        name="dgiwg_service_operation"
+                        forceLabel="true"
+                        templateModeOnly="true"
+                        xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:containsOperations"
+                        del="." >
+
+                        <template>
+                            <values>
+                                <key
+                                    label="dgiwg_sop_name"
+                                    required="true"
+                                    xpath="srv:SV_OperationMetadata/srv:operationName/gco:CharacterString" />
+                                <key 
+                                    label="dgiwg_sop_platform"
+                                    required="true"
+                                    xpath="srv:SV_OperationMetadata/srv:DCP/srv:DCPList/@codeListValue">
+                                    <codelist name="srv:DCPList"/>
+                                </key>
+                                <key
+                                    label="dgiwg_sop_url"
+                                    required="true"
+                                    xpath="srv:SV_OperationMetadata/srv:connectPoint/gmd:CI_OnlineResource/gmd:linkage/gmd:URL"/>
+                                <key
+                                    label="dgiwg_sop_function"                                   
+                                    xpath="srv:SV_OperationMetadata/srv:connectPoint/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue">
+                                    <codelist name="gmd:CI_OnLineFunctionCode"/>
+                                </key>
+                            </values>
+                            <snippet>
+
+                                <srv:containsOperations>
+                                   <srv:SV_OperationMetadata>
+                                      <srv:operationName>
+                                         <gco:CharacterString>{{dgiwg_sop_name}}</gco:CharacterString>
+                                      </srv:operationName>
+                                      <srv:DCP>
+                                         <srv:DCPList codeList="http://www.isotc211.org/2005/iso19119/resources/Codelist/gmxCodelists.xml#DCPList"
+                                                      codeListValue="{{dgiwg_sop_platform}}"/>
+                                      </srv:DCP>
+                                      <srv:connectPoint>
+                                         <gmd:CI_OnlineResource>
+                                            <gmd:linkage>
+                                               <gmd:URL>{{dgiwg_sop_url}}</gmd:URL>
+                                            </gmd:linkage>
+
+                                            <gmd:protocol><gco:CharacterString/></gmd:protocol>
+                                            <gmd:description><gco:CharacterString/></gmd:description>
+
+                                            <gmd:function>
+                                               <gmd:CI_OnLineFunctionCode
+                                                   codeListValue="{{dgiwg_sop_function}}"
+                                                   codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode">information</gmd:CI_OnLineFunctionCode>
+                                            </gmd:function>
+                                         </gmd:CI_OnlineResource>
+                                      </srv:connectPoint>
+                                   </srv:SV_OperationMetadata>
+                                </srv:containsOperations>
+                            </snippet>
+                        </template>
+                    </field>
+
+
+                    <action type="add"
+                            name="dgiwg_service_operation"
+                            btnLabel="dgiwg_add_service_operation"
+                            forceLabel="true"
+                            or="containsOperations"
+                            in="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification">
+                        <template>
+                            <snippet>
+                                <srv:containsOperations>
+                                   <srv:SV_OperationMetadata>
+                                      <srv:operationName>
+                                         <gco:CharacterString></gco:CharacterString>
+                                      </srv:operationName>
+                                      <srv:DCP>
+                                         <srv:DCPList codeList="http://www.isotc211.org/2005/iso19119/resources/Codelist/gmxCodelists.xml#DCPList"
+                                                      codeListValue="WebServices"/>
+                                      </srv:DCP>
+                                      <srv:connectPoint>
+                                         <gmd:CI_OnlineResource>
+                                            <gmd:linkage>
+                                               <gmd:URL>http://</gmd:URL>
+                                            </gmd:linkage>
+
+                                            <gmd:protocol><gco:CharacterString/></gmd:protocol>
+                                            <gmd:description><gco:CharacterString/></gmd:description>
+
+                                            <gmd:function>
+                                               <gmd:CI_OnLineFunctionCode
+                                                   codeListValue=""
+                                                   codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode">information</gmd:CI_OnLineFunctionCode>
+                                            </gmd:function>
+                                         </gmd:CI_OnlineResource>
+                                      </srv:connectPoint>
+                                   </srv:SV_OperationMetadata>
+                                </srv:containsOperations>
+                            </snippet>
+                        </template>
+                    </action>
+
+                </section>
+
+                <!-- service coupling (coupledResource) -->
+
+                <section name="dgiwg_service_coupling">
+
+                    <field
+                        name="dgiwg_service_coupled"
+                        forceLabel="true"
+                        xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:coupledResource"
+                        del="." />
+
+                    <action type="add"
+                            name="dgiwg_service_coupled"
+                            btnLabel="dgiwg_add_service_coupled"
+                            forceLabel="true"
+                            or="coupledResource"
+                            in="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification">
+                        <template>
+                            <snippet>
+                                <srv:coupledResource>
+                                    <srv:SV_CoupledResource>
+                                        <srv:operationName>
+                                            <gco:CharacterString/>
+                                        </srv:operationName>
+                                        <srv:identifier>
+                                            <gco:CharacterString/>
+                                        </srv:identifier>
+                                        <gco:ScopedName/>
+                                    </srv:SV_CoupledResource>
+                                </srv:coupledResource>
+                            </snippet>
+                        </template>
+                    </action>
+
+
+<!--                    <field
+                        name="dgiwg_service_operation"
+                        forceLabel="true"
+                        templateModeOnly="true"
+                        xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:coupledResource"
+                        del="." >
+
+         <srv:coupledResource>
+            <srv:SV_CoupledResource>
+               <srv:operationName/>
+               <srv:identifier/>
+               <gco:ScopedName>scopedname</gco:ScopedName>
+            </srv:SV_CoupledResource>
+         </srv:coupledResource> -->
+                </section>
+            </section>
+
+<!--                    <field name="operated_dataset_id"
+                           templateModeOnly="true"
+                           notDisplayedIfMissing="true"
+
+                           xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:operatesOn"
+                           del=".">-->
+
+
+
+<!--                <field xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:serviceType"
+                       or="serviceType" in="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification"/>
+
+                <field xpath="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:serviceTypeVersion"
+                       or="serviceTypeVersion" in="/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification"/>-->
+
+
+<!--         <srv:serviceType>
+            <gco:LocalName codeSpace="www.w3c.org">OGC:WMS</gco:LocalName>
+         </srv:serviceType>
+         <srv:serviceTypeVersion>-->
+
         </tab>
 
 
