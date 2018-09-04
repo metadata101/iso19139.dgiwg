@@ -49,6 +49,9 @@
   <add_transfer_options>Add transfer options</add_transfer_options>
   <add_online_location>Add online location</add_online_location>
 
+  <dgiwg_thumbnail>Thumbnail</dgiwg_thumbnail>
+  <dgiwg_add_thumbnail>Add thumbnail info</dgiwg_add_thumbnail>
+
   <sec_srv_identification>Service identification</sec_srv_identification>
   <sec_spatio_temporal>Spatio-temporal</sec_spatio_temporal>
   <sec_management>Management</sec_management>
