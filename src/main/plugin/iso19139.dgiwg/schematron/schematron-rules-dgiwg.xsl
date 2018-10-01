@@ -635,7 +635,7 @@
                <xsl:text/>
                <xsl:copy-of select="$loc/strings/DMF20_SC06.report"/>
                <xsl:text/> "<xsl:text/>
-               <xsl:copy-of select="$required"/>
+               <xsl:copy-of select="$ok"/>
                <xsl:text/>"</svrl:text>
          </svrl:successful-report>
       </xsl:if>
